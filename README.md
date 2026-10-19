@@ -1,5 +1,7 @@
 # @timonics/auth-guard
 
+[![npm version](https://img.shields.io/npm/v/@timonics/auth-guard)](https://www.npmjs.com/package/@timonics/auth-guard)
+
 Resource-server authentication for timonics microservices. Verifies RS256 JWT
 access tokens issued by the workspace auth service (cerberus) against its
 public JWKS — the standard OAuth2 resource-server pattern — and provides
@@ -11,19 +13,10 @@ global guards for authentication and scope authorization.
 npm i @timonics/auth-guard jose
 ```
 
+Published to the public npm registry as
+[`@timonics/auth-guard`](https://www.npmjs.com/package/@timonics/auth-guard).
 `@nestjs/common`, `@nestjs/core` and `reflect-metadata` are peer
 dependencies (any Nest 10 or 11 app already has them).
-
-> **Workspace note:** this package is currently consumed from source via a
-> `file:` dependency in the timonics workspace, e.g. in calliope's
-> `package.json`:
->
-> ```json
-> "@timonics/auth-guard": "file:../auth-guard"
-> ```
->
-> After pulling, run `npm run build` inside `auth-guard/` so `dist/` is
-> present.
 
 ## Setup
 
