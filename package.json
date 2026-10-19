@@ -1,6 +1,6 @@
 {
   "name": "@timonics/auth-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NestJS resource-server auth for timonics services: JWKS JWT verification, global auth/scope guards, and a matching exception filter. Verifies RS256 access tokens issued by cerberus.",
   "license": "UNLICENSED",
   "repository": {
