@@ -3,6 +3,23 @@
   "version": "0.1.0",
   "description": "NestJS resource-server auth for timonics services: JWKS JWT verification, global auth/scope guards, and a matching exception filter. Verifies RS256 access tokens issued by cerberus.",
   "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Timonics/auth-guard.git"
+  },
+  "keywords": [
+    "nestjs",
+    "jwt",
+    "jwks",
+    "auth",
+    "guard",
+    "oauth2",
+    "resource-server",
+    "timonics"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=20"
   },
@@ -15,7 +32,8 @@
     "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint \"src/**/*.ts\"",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "npm run build && npm test"
   },
   "peerDependencies": {
     "@nestjs/common": "^10.0.0 || ^11.0.0",
